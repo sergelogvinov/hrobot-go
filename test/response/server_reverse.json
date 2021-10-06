@@ -1,11 +1,12 @@
 {
-    "cancellation":{
-      "server_ip":"123.123.123.123",
-      "server_number":321,
-      "server_name":"server1",
-      "earliest_cancellation_date":"2014-04-15",
-      "cancelled":true,
-      "cancellation_date":"2014-04-15",
-      "cancellation_reason":null
-    }
+  "cancellation": {
+    "server_ip": "123.123.123.123",
+    "server_ipv6_net": "2000:1:2:4::",
+    "server_number": 321,
+    "server_name": "server1",
+    "earliest_cancellation_date": "2014-04-15",
+    "cancelled": true,
+    "cancellation_date": "2014-04-15",
+    "cancellation_reason": null
   }
+}

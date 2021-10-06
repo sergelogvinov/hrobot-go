@@ -11,6 +11,7 @@ type Subnet struct {
 
 type Server struct {
 	ServerIP     string   `json:"server_ip"`
+	ServerIP6Net string   `json:"server_ipv6_net"`
 	ServerNumber int      `json:"server_number"`
 	ServerName   string   `json:"server_name"`
 	Product      string   `json:"product"`
