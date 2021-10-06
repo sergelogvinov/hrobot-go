@@ -27,6 +27,9 @@ const testServerIP2 = "123.123.123.124"
 const testIP = "123.123.123.123"
 const testIP2 = "124.124.124.124"
 
+const testVSwitchID = 1234
+const testVSwitchID2 = 4321
+
 func (s *ClientSuite) TestSetDefaultUserAgent(c *C) {
 	ts := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		reqUserAgent := r.Header.Get("User-Agent")

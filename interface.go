@@ -20,4 +20,6 @@ type RobotClient interface {
 	ResetSet(ip string, input *models.ResetSetInput) (*models.ResetPost, error)
 	FailoverGetList() ([]models.Failover, error)
 	FailoverGet(ip string) (*models.Failover, error)
+	VSwitchGetList() ([]models.VSwitch, error)
+	VSwitchGet(id int) (*models.VSwitch, error)
 }

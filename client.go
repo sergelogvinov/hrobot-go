@@ -82,7 +82,7 @@ func (c *Client) doRequest(req *http.Request) ([]byte, error) {
 	if err != nil {
 		return nil, err
 	}
-	if 200 != resp.StatusCode {
+	if resp.StatusCode != 200 {
 		return nil, fmt.Errorf("%s", body)
 	}
 	return body, nil
