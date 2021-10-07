@@ -22,6 +22,8 @@ type ClientSuite struct{}
 var _ = Suite(&ClientSuite{})
 
 const (
+	testKey = "35:75:c0:ec:5f:09:a2:1f:91:02:84:a7:a2:57:f1:68"
+
 	testServerIP  = "123.123.123.123"
 	testServerIP2 = "123.123.123.124"
 

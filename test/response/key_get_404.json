@@ -1,0 +1,7 @@
+{
+  "error": {
+    "status": 404,
+    "code": "NOT_FOUND",
+    "message": "Key not found"
+  }
+}

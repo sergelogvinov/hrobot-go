@@ -1,0 +1,9 @@
+{
+  "key": {
+    "name": "key2",
+    "fingerprint": "35:75:c0:ec:5f:09:a2:1f:91:02:84:a7:a2:57:f1:68",
+    "type": "ED25519",
+    "size": 256,
+    "data": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINLgdTpQpCb9e4vB2PVqEj8ElBuz4QAe4IgmETHi2Kf/ test"
+  }
+}

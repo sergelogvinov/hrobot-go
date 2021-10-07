@@ -11,6 +11,8 @@ type RobotClient interface {
 	ServerSetName(ip string, input *models.ServerSetNameInput) (*models.Server, error)
 	ServerReverse(ip string) (*models.Cancellation, error)
 	KeyGetList() ([]models.Key, error)
+	KeyGet(id string) (*models.Key, error)
+	KeySet(name, data string) (*models.Key, error)
 	IPGetList() ([]models.IP, error)
 	RDnsGetList() ([]models.Rdns, error)
 	RDnsGet(ip string) (*models.Rdns, error)
