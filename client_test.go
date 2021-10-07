@@ -21,14 +21,19 @@ type ClientSuite struct{}
 
 var _ = Suite(&ClientSuite{})
 
-const testServerIP = "123.123.123.123"
-const testServerIP2 = "123.123.123.124"
+const (
+	testServerIP  = "123.123.123.123"
+	testServerIP2 = "123.123.123.124"
 
-const testIP = "123.123.123.123"
-const testIP2 = "124.124.124.124"
+	testIP  = "123.123.123.123"
+	testIP2 = "124.124.124.124"
 
-const testVSwitchID = 1234
-const testVSwitchID2 = 4321
+	testFirewallTemplateID  = 1
+	testFirewallTemplateID2 = 123
+
+	testVSwitchID  = 1234
+	testVSwitchID2 = 4321
+)
 
 func (s *ClientSuite) TestSetDefaultUserAgent(c *C) {
 	ts := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
