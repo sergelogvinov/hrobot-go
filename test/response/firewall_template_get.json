@@ -1,6 +1,7 @@
 {
   "firewall_template": {
     "id": 123,
+    "name": "MyTemplate",
     "whitelist_hos": true,
     "is_default": false,
     "rules": {

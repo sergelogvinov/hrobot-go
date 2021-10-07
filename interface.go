@@ -22,6 +22,7 @@ type RobotClient interface {
 	FailoverGet(ip string) (*models.Failover, error)
 	FirewallTemplateGetList() ([]models.FirewallTemplate, error)
 	FirewallTemplateGet(id int) (*models.FirewallTemplate, error)
+	FirewallTemplateSet(id int, input *models.FirewallTemplate) (*models.FirewallTemplate, error)
 	VSwitchGetList() ([]models.VSwitch, error)
 	VSwitchGet(id int) (*models.VSwitch, error)
 }

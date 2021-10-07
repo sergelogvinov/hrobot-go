@@ -22,15 +22,17 @@ type Firewall struct {
 }
 
 type FirewallRules struct {
-	Input []struct {
-		IPVersion string `json:"ip_version"`
-		Name      string `json:"name"`
-		DstIP     string `json:"dst_ip,omitempty"`
-		DstPort   string `json:"dst_port,omitempty"`
-		SrcIP     string `json:"src_ip,omitempty"`
-		SrcPort   string `json:"src_port,omitempty"`
-		Protocol  string `json:"protocol,omitempty"`
-		TCPFlags  string `json:"tcp_flags,omitempty"`
-		Action    string `json:"action"`
-	} `json:"input"`
+	Input []FirewallRulesInput `json:"input"`
+}
+
+type FirewallRulesInput struct {
+	IPVersion string `json:"ip_version"`
+	Name      string `json:"name"`
+	DstIP     string `json:"dst_ip,omitempty"`
+	DstPort   string `json:"dst_port,omitempty"`
+	SrcIP     string `json:"src_ip,omitempty"`
+	SrcPort   string `json:"src_port,omitempty"`
+	Protocol  string `json:"protocol,omitempty"`
+	TCPFlags  string `json:"tcp_flags,omitempty"`
+	Action    string `json:"action"`
 }
